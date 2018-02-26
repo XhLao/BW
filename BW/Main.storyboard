@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="Y58-B1-i3H">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hL9-iv-If1" customClass="MainVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M6R-aF-Zip"/>
+                        <viewControllerLayoutGuide type="bottom" id="QTO-j1-ogz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wMl-qc-Xb3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fY-sX-ybe">
+                                <rect key="frame" x="15" y="161" width="345" height="345"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0fY-sX-ybe" secondAttribute="height" multiplier="1:1" id="GYs-jT-f8N"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBe-CB-dil">
+                                <rect key="frame" x="15" y="638" width="55" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CMW-Cv-Ydc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tq8-ih-rnh">
+                                <rect key="frame" x="265" y="638" width="95" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DHG-0m-GjJ"/>
+                                    <constraint firstAttribute="width" constant="95" id="LyF-qU-H6q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0fY-sX-ybe" firstAttribute="leading" secondItem="wMl-qc-Xb3" secondAttribute="leading" constant="15" id="1Tg-O2-T4r"/>
+                            <constraint firstAttribute="trailing" secondItem="Tq8-ih-rnh" secondAttribute="trailing" constant="15" id="Fgb-ga-Bpy"/>
+                            <constraint firstItem="nBe-CB-dil" firstAttribute="leading" secondItem="wMl-qc-Xb3" secondAttribute="leading" constant="15" id="LZd-qp-9tb"/>
+                            <constraint firstItem="QTO-j1-ogz" firstAttribute="top" secondItem="nBe-CB-dil" secondAttribute="bottom" constant="8" id="THN-FI-3Tg"/>
+                            <constraint firstItem="0fY-sX-ybe" firstAttribute="centerX" secondItem="wMl-qc-Xb3" secondAttribute="centerX" id="oBc-K5-lLx"/>
+                            <constraint firstAttribute="trailing" secondItem="0fY-sX-ybe" secondAttribute="trailing" constant="15" id="omL-nY-XMj"/>
+                            <constraint firstItem="QTO-j1-ogz" firstAttribute="top" secondItem="Tq8-ih-rnh" secondAttribute="bottom" constant="8" id="rI9-at-lBK"/>
+                            <constraint firstItem="0fY-sX-ybe" firstAttribute="centerY" secondItem="wMl-qc-Xb3" secondAttribute="centerY" id="zCu-Zo-T6B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameView" destination="0fY-sX-ybe" id="WXd-bO-G5M"/>
+                        <outlet property="stepLabel" destination="nBe-CB-dil" id="PVd-xq-hjc"/>
+                        <outlet property="timeLabel" destination="Tq8-ih-rnh" id="n1u-qC-hAn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cg-tL-eTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105" y="134"/>
+        </scene>
+    </scenes>
+</document>
